@@ -1,0 +1,121 @@
+{
+  "location": {
+    "name": "Daegu Downtown",
+    "latitude": 35.8714,
+    "longitude": 128.6014,
+    "description": "Sample area in Daegu city center for shadow-aware pathfinding demonstration"
+  },
+  "buildings": [
+    {
+      "id": "building_001",
+      "name": "Daegu Tower",
+      "height": 180,
+      "footprint": [
+        {"x": 100, "y": 100},
+        {"x": 140, "y": 100},
+        {"x": 140, "y": 140},
+        {"x": 100, "y": 140}
+      ],
+      "type": "office"
+    },
+    {
+      "id": "building_002", 
+      "name": "Shopping Complex",
+      "height": 45,
+      "footprint": [
+        {"x": 200, "y": 50},
+        {"x": 280, "y": 50},
+        {"x": 280, "y": 120},
+        {"x": 200, "y": 120}
+      ],
+      "type": "commercial"
+    },
+    {
+      "id": "building_003",
+      "name": "Residential Block A",
+      "height": 75,
+      "footprint": [
+        {"x": 50, "y": 200},
+        {"x": 120, "y": 200},
+        {"x": 120, "y": 270},
+        {"x": 50, "y": 270}
+      ],
+      "type": "residential"
+    },
+    {
+      "id": "building_004",
+      "name": "City Hall",
+      "height": 60,
+      "footprint": [
+        {"x": 300, "y": 200},
+        {"x": 380, "y": 200},
+        {"x": 380, "y": 260},
+        {"x": 300, "y": 260}
+      ],
+      "type": "government"
+    },
+    {
+      "id": "building_005",
+      "name": "Medical Center",
+      "height": 90,
+      "footprint": [
+        {"x": 150, "y": 300},
+        {"x": 250, "y": 300},
+        {"x": 250, "y": 380},
+        {"x": 150, "y": 380}
+      ],
+      "type": "hospital"
+    },
+    {
+      "id": "building_006",
+      "name": "University Building",
+      "height": 55,
+      "footprint": [
+        {"x": 350, "y": 350},
+        {"x": 420, "y": 350},
+        {"x": 420, "y": 420},
+        {"x": 350, "y": 420}
+      ],
+      "type": "education"
+    }
+  ],
+  "path_nodes": [
+    {"id": "node_001", "name": "Main Station", "x": 0, "y": 0},
+    {"id": "node_002", "name": "Central Plaza", "x": 150, "y": 50},
+    {"id": "node_003", "name": "Shopping District", "x": 300, "y": 100},
+    {"id": "node_004", "name": "Park Entrance", "x": 0, "y": 150},
+    {"id": "node_005", "name": "City Center", "x": 150, "y": 150},
+    {"id": "node_006", "name": "Business District", "x": 300, "y": 150},
+    {"id": "node_007", "name": "Residential Area", "x": 100, "y": 300},
+    {"id": "node_008", "name": "Hospital Entrance", "x": 200, "y": 350},
+    {"id": "node_009", "name": "University Gate", "x": 400, "y": 400},
+    {"id": "node_010", "name": "South Exit", "x": 450, "y": 200},
+    {"id": "node_011", "name": "North Plaza", "x": 200, "y": 450},
+    {"id": "node_012", "name": "East Market", "x": 500, "y": 250}
+  ],
+  "path_edges": [
+    {"from": "node_001", "to": "node_002", "distance": 180.3},
+    {"from": "node_001", "to": "node_004", "distance": 150.0},
+    {"from": "node_002", "to": "node_003", "distance": 180.3},
+    {"from": "node_002", "to": "node_005", "distance": 100.0},
+    {"from": "node_003", "to": "node_006", "distance": 70.7},
+    {"from": "node_004", "to": "node_005", "distance": 180.3},
+    {"from": "node_004", "to": "node_007", "distance": 180.3},
+    {"from": "node_005", "to": "node_006", "distance": 150.0},
+    {"from": "node_005", "to": "node_007", "distance": 180.3},
+    {"from": "node_005", "to": "node_008", "distance": 223.6},
+    {"from": "node_006", "to": "node_010", "distance": 180.3},
+    {"from": "node_007", "to": "node_008", "distance": 111.8},
+    {"from": "node_008", "to": "node_009", "distance": 223.6},
+    {"from": "node_008", "to": "node_011", "distance": 100.0},
+    {"from": "node_009", "to": "node_010", "distance": 223.6},
+    {"from": "node_009", "to": "node_012", "distance": 180.3},
+    {"from": "node_010", "to": "node_012", "distance": 70.7},
+    {"from": "node_011", "to": "node_009", "distance": 223.6},
+    {"from": "node_002", "to": "node_007", "distance": 316.2},
+    {"from": "node_003", "to": "node_008", "distance": 282.8},
+    {"from": "node_006", "to": "node_009", "distance": 282.8},
+    {"from": "node_001", "to": "node_005", "distance": 212.1},
+    {"from": "node_007", "to": "node_011", "distance": 180.3}
+  ]
+}
